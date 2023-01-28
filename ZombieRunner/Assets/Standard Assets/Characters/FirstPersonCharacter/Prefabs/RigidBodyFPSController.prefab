@@ -466,6 +466,7 @@ MonoBehaviour:
   damage: 10
   muzzleFlash: {fileID: 4839317547599060533}
   muzzleSparks: {fileID: 6083089190099734681}
+  hitEffect: {fileID: 4919166826263595037, guid: 75fc9e646b8551e4d97861d0274bfc05, type: 3}
 --- !u!4 &2337074159943486634 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
