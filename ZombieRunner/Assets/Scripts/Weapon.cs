@@ -7,7 +7,6 @@ public class Weapon : MonoBehaviour
     [SerializeField] Camera FPCamera;
     [SerializeField] float range = 100f;
     [SerializeField] int damage = 10;
-    public int Damage{ get{ return damage; } }
 
     void Update()
     {
