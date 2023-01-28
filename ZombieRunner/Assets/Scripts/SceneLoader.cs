@@ -18,6 +18,7 @@ public class SceneLoader : MonoBehaviour
     }
     public void ReloadScene(){
         SceneManager.LoadScene("SandBox");
+        Time.timeScale = 1;
     }
     public void QuitGame(){
         Application.Quit();

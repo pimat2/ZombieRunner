@@ -33,6 +33,9 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void OnDamageTaken(){
+        isProvoked = true;
+    }
 
     void OnDrawGizmosSelected() {
         Gizmos.color = new Color(1,0,0);

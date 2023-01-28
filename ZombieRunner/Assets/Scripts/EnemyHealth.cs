@@ -12,6 +12,7 @@ public class EnemyHealth : MonoBehaviour
         weaponScript = FindObjectOfType<Weapon>();
     }
     public void TakeDamage(int damage){
+        BroadcastMessage("OnDamageTaken");
         health = health - damage;
         if(health <= 0){
             Destroy(gameObject);

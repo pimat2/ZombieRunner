@@ -5,10 +5,11 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] int health = 100;
+    DeathHandler deathHandler;
     // Start is called before the first frame update
     void Start()
     {
-        
+        deathHandler = GetComponent<DeathHandler>();
     }
 
     // Update is called once per frame
@@ -19,7 +20,7 @@ public class PlayerHealth : MonoBehaviour
     public void ReduceHealth(int damage){
         health -= damage;
         if(health <= 0){
-            Debug.Log("You are dead buddy");
+            deathHandler.HandleDeath();
         }
     }
 }
