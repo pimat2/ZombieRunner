@@ -342,6 +342,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9097503857912278562}
     m_Modifications:
+    - target: {fileID: 1347872833902987499, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: m_Name
+      value: MuzzleLight
+      objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -406,10 +410,74 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carbine
       objectReference: {fileID: 0}
+    - target: {fileID: 4839317546360083769, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083089191309581205, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: lengthInSec
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083089191309581205, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083089191309581205, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083089191309581205, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083089191309581205, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083089191309581205, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083089191309581205, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0.3529412
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+--- !u!1 &2337074159943323786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2337074158997199750, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+  m_PrefabInstance: {fileID: 1508854540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1057544318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337074159943323786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f1d0dc7f301b9f4bb3677a7c4555780, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 2000000}
+  range: 100
+  damage: 10
+  muzzleFlash: {fileID: 4839317547599060533}
+  muzzleSparks: {fileID: 6083089190099734681}
 --- !u!4 &2337074159943486634 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+  m_PrefabInstance: {fileID: 1508854540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4839317547599060533 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4839317546360083769, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+  m_PrefabInstance: {fileID: 1508854540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6083089190099734681 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6083089191309581205, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
   m_PrefabInstance: {fileID: 1508854540}
   m_PrefabAsset: {fileID: 0}
