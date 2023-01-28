@@ -12,9 +12,11 @@ public class EnemyAI : MonoBehaviour
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
+    Animator enemyAnimator;
     
     void Start()
     {
+        enemyAnimator = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.stoppingDistance = attackRange;
     }
@@ -51,11 +53,15 @@ public class EnemyAI : MonoBehaviour
 
 
     void AttackTarget(){
-        Debug.Log("Attacking Player");
+        enemyAnimator.SetBool("Attack", true);
+        
     }
 
 
     void ChaseTarget(){
+        enemyAnimator.SetBool("Attack", false);
+        enemyAnimator.SetTrigger("Move");
         navMeshAgent.SetDestination(target.position);
     }
+
 }
