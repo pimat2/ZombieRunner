@@ -904,6 +904,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1163208518910927340, guid: 3a7d8fcf14c1b624d8be2067a2128852, type: 3}
   m_PrefabInstance: {fileID: 1163208519112458982}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &471104776 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1163208518912475118, guid: 3a7d8fcf14c1b624d8be2067a2128852, type: 3}
+  m_PrefabInstance: {fileID: 1163208519112458982}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &554319127
 GameObject:
   m_ObjectHideFlags: 0
@@ -3409,6 +3414,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 554319131}
+--- !u!114 &1480858311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470515502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae1941bf00df4548a8f07bde84e24f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsCamera: {fileID: 471104776}
 --- !u!1 &1509516761
 GameObject:
   m_ObjectHideFlags: 0
