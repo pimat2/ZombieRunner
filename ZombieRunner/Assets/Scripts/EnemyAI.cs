@@ -21,6 +21,10 @@ public class EnemyAI : MonoBehaviour
     {
         CalculateDistanceToPlayer();
     }
+    void OnDrawGizmosSelected() {
+        Gizmos.color = new Color(1,0,0);
+        Gizmos.DrawWireSphere(transform.position, chaseRange);    
+    }
     void CalculateDistanceToPlayer(){
         distanceToTarget = Vector3.Distance(target.position, transform.position);
         if(distanceToTarget <= chaseRange){
