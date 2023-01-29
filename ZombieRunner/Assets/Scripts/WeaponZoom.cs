@@ -12,14 +12,7 @@ public class WeaponZoom : MonoBehaviour
     [SerializeField] float zoomOutSensitivity = 2f;
     [SerializeField] float zoomInSensitivity = 0.5f;
     [SerializeField] Camera fpsCamera;
-    RigidbodyFirstPersonController fpsController;
-    // Start is called before the first frame update
-    void Start()
-    {
-        fpsController = GetComponent<RigidbodyFirstPersonController>();
-    }
-
-    // Update is called once per frame
+    [SerializeField] RigidbodyFirstPersonController fpsController;
     void Update()
     {
         if(Input.GetMouseButton(1)){

@@ -10,16 +10,25 @@ public class Weapon : MonoBehaviour
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] ParticleSystem muzzleSparks;
     [SerializeField] GameObject hitEffect;
+    [SerializeField] Ammo ammoSlot;
+    [SerializeField] float shotDelay = -0.5f;
 
+    bool canShoot = true;
     void Update()
     {
-        if(Input.GetButtonDown("Fire1")){
-            Shoot();
+        if(Input.GetButtonDown("Fire1") && canShoot == true){
+            StartCoroutine(Shoot());
         }
     }
-    void Shoot(){
-        ProcessRaycast();
-        PlayMuzzleFlash();
+    IEnumerator Shoot(){
+        canShoot = false;
+        if(ammoSlot.GetCurrentAmmo() > 0){
+            ProcessRaycast();
+            PlayMuzzleFlash();
+            ammoSlot.ReduceCurrentAmmo();
+        }
+        yield return new WaitForSeconds(shotDelay);
+        canShoot = true;
     }
     void PlayMuzzleFlash(){
         muzzleSparks.Play();
