@@ -7,10 +7,13 @@ public class Weapon : MonoBehaviour
     [SerializeField] Camera FPCamera;
     [SerializeField] float range = 100f;
     [SerializeField] int damage = 10;
+    [Header("Weapon and Hit VFX")]
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] ParticleSystem muzzleSparks;
     [SerializeField] GameObject hitEffect;
+    [Header("Weapon Characheristics")]
     [SerializeField] Ammo ammoSlot;
+    [SerializeField] AmmoType ammoType;
     [SerializeField] float shotDelay = -0.5f;
 
     bool canShoot = true;
@@ -25,10 +28,10 @@ public class Weapon : MonoBehaviour
     }
     IEnumerator Shoot(){
         canShoot = false;
-        if(ammoSlot.GetCurrentAmmo() > 0){
+        if(ammoSlot.GetCurrentAmmo(ammoType) > 0){
             ProcessRaycast();
             PlayMuzzleFlash();
-            ammoSlot.ReduceCurrentAmmo();
+            ammoSlot.ReduceCurrentAmmo(ammoType);
         }
         yield return new WaitForSeconds(shotDelay);
         canShoot = true;

@@ -33,4 +33,5 @@ public class WeaponZoom : MonoBehaviour
         fpsController.mouseLook.XSensitivity = zoomOutSensitivity;
         fpsController.mouseLook.YSensitivity = zoomOutSensitivity;
     }
+    
 }

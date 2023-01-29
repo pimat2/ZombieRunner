@@ -223,7 +223,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b87ad6bfb93254a85f0295c0d08837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 10
+  - ammoType: 1
+    ammoAmount: 5
+  - ammoType: 2
+    ammoAmount: 20
 --- !u!1 &1163208518910836170
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +496,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 1480858316}
+    - target: {fileID: 341833938223884933, guid: 13b559523eefe5f46bc624f210bcc2fb, type: 3}
+      propertyPath: ammoType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2652766102272320113, guid: 13b559523eefe5f46bc624f210bcc2fb, type: 3}
       propertyPath: m_Name
       value: MachineGun
@@ -572,6 +582,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 1480858316}
+    - target: {fileID: 343569830520887860, guid: 96dd5fdca7384e544880c05de0cb8d77, type: 3}
+      propertyPath: ammoType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 343569830520887860, guid: 96dd5fdca7384e544880c05de0cb8d77, type: 3}
       propertyPath: shotDelay
       value: 2

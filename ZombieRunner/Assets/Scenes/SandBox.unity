@@ -5349,6 +5349,26 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 554319131}
+    - target: {fileID: 1480858316, guid: 3a7d8fcf14c1b624d8be2067a2128852, type: 3}
+      propertyPath: ammoSlots.Array.data[1].ammoType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480858316, guid: 3a7d8fcf14c1b624d8be2067a2128852, type: 3}
+      propertyPath: ammoSlots.Array.data[2].ammoType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480858316, guid: 3a7d8fcf14c1b624d8be2067a2128852, type: 3}
+      propertyPath: ammoSlots.Array.data[0].ammoAmount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480858316, guid: 3a7d8fcf14c1b624d8be2067a2128852, type: 3}
+      propertyPath: ammoSlots.Array.data[1].ammoAmount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480858316, guid: 3a7d8fcf14c1b624d8be2067a2128852, type: 3}
+      propertyPath: ammoSlots.Array.data[2].ammoAmount
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1163208518910836168, guid: 3a7d8fcf14c1b624d8be2067a2128852, type: 3}
       propertyPath: m_Name
       value: Player
@@ -5395,14 +5415,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1163208518910927340, guid: 3a7d8fcf14c1b624d8be2067a2128852, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163208519112458984, guid: 3a7d8fcf14c1b624d8be2067a2128852, type: 3}
-      propertyPath: currentWeapon
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3479733767223405540, guid: 3a7d8fcf14c1b624d8be2067a2128852, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
