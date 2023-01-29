@@ -14,6 +14,9 @@ public class Weapon : MonoBehaviour
     [SerializeField] float shotDelay = -0.5f;
 
     bool canShoot = true;
+    void OnEnable() {
+        canShoot = true;    
+    }
     void Update()
     {
         if(Input.GetButtonDown("Fire1") && canShoot == true){
