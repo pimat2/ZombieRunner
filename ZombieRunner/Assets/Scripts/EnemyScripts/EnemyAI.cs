@@ -8,13 +8,13 @@ public class EnemyAI : MonoBehaviour
 {
     [SerializeField] float attackRange = 3f;
     [SerializeField] float chaseRange = 5f;
-    [SerializeField] Transform target;
     [SerializeField] float turnSpeed = 2f;
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
     Animator enemyAnimator;
     EnemyHealth enemyHealth;
+    Transform target;
     
     void Start()
     {
@@ -22,6 +22,7 @@ public class EnemyAI : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         enemyHealth = GetComponent<EnemyHealth>();
         navMeshAgent.stoppingDistance = attackRange;
+        target = FindObjectOfType<PlayerHealth>().transform;
     }
 
     void Update()

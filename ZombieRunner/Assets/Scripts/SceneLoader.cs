@@ -17,7 +17,7 @@ public class SceneLoader : MonoBehaviour
         
     }
     public void ReloadScene(){
-        SceneManager.LoadScene("SandBox");
+        SceneManager.LoadScene("Asalym");
         Time.timeScale = 1;
     }
     public void QuitGame(){
